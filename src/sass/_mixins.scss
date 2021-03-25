@@ -5,3 +5,14 @@
 	line-height: $line-height-base;
 	color: $text-color-base;
 }
+
+// Layout
+@mixin centered {
+	display: flex;
+	align-items: $align-center;
+	justify-content: $justify-center;
+}
+
+@mixin flex {
+	display: flex;
+}

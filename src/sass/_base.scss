@@ -17,7 +17,7 @@ html {
 body {
 	@include font;
 
-	min-height: $max-height;
+	min-height: $max-height-vh;
 	background-image: $background-gradient;
 	background-size: cover;
 	background-repeat: no-repeat;

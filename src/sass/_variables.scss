@@ -36,13 +36,19 @@ $color-black: #000;
 
 // --- TYPOGRAPHY === //
 
+// Font Size
+
+$font-size-xs: 0.8rem;
+$font-size-md: 1.4rem;
+
 // Font Family
 
 $font-family-base: "Open Sans", sans-serif;
 
 // Font Weight
 
-$font-weight-thin: 300;
+$font-weight-thin: 100;
+$font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-semi-bold: 600;
 
@@ -56,9 +62,27 @@ $text-color-base: $color-grey-dark-1;
 
 // --- SIZE --- //
 
-$max-height: 100vh;
+$max-height-vh: 100vh;
+$max-height: 100%;
 $max-width: 100%;
+
+// Border
+
+$border-radius-base: 100px;
 
 // Shadow
 
 $shadow-dark: 0 2rem 6rem rgba($color-black, 0.3);
+
+// --- ANIMATION --- //
+
+// Transition
+
+$transition-basic: all 0.3s ease;
+
+// --- FLEX POSITION --- //
+
+$align-center: center;
+$align-stretch: stretch;
+$justify-center: center;
+$justify-between: space-between;

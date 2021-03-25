@@ -1,5 +1,5 @@
-# Natours Website
+# Trillo App
 
-![Screenshot for the Natours Website](./project10.png)
+![Screenshot for the Trillo App](./project10.png)
 
 ## Welcome! 👋
