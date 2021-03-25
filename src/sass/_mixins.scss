@@ -1,0 +1,7 @@
+// Typografy
+@mixin font {
+	font-family: $font-family-base;
+	font-weight: $font-weight-regular;
+	line-height: $line-height-base;
+	color: $text-color-base;
+}
