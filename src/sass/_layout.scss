@@ -22,11 +22,16 @@
 }
 
 .sidebar {
+	@include flex;
+
 	flex: 0 0 $max-width - 82;
+	flex-direction: column;
+	justify-content: $justify-between;
 	background-color: $color-grey-dark-1;
 }
 
 .hotel-view {
 	flex: 1;
+	height: 80rem;
 	background-color: royalblue;
 }
