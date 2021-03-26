@@ -7,8 +7,9 @@
 }
 
 // Layout
-@mixin centered {
+@mixin centered($direction) {
 	display: flex;
+	flex-direction: $direction;
 	align-items: $align-center;
 	justify-content: $justify-center;
 }

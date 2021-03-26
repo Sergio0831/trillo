@@ -11,7 +11,7 @@
 
 	align-items: $align-center;
 	justify-content: $justify-between;
-	border-bottom: $color-grey-light-1;
+	border-bottom: 1px solid $color-grey-light-2;
 	height: 7rem;
 	font-size: $font-size-md;
 	background-color: $color-white;
@@ -33,5 +33,4 @@
 .hotel-view {
 	flex: 1;
 	height: 80rem;
-	background-color: royalblue;
 }

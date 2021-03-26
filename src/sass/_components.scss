@@ -1,14 +1,14 @@
-// === Logo === ///
+/// === Logo === ///
 
 .logo {
 	margin-left: 2rem;
 	height: 3.25rem;
 }
 
-// === Search === ///
+/// === Search === ///
 
 .search {
-	@include centered;
+	@include centered(row);
 
 	flex: 0 0 $max-width - 60;
 
@@ -61,7 +61,7 @@
 	}
 }
 
-// === User Navigation === ///
+/// === User Navigation === ///
 
 .user-nav {
 	@include flex;
@@ -94,7 +94,7 @@
 	}
 
 	&__notification {
-		@include centered;
+		@include centered(row);
 
 		position: absolute;
 		right: 1rem;
@@ -120,7 +120,7 @@
 	}
 }
 
-// === Side Navigation === ///
+/// === Side Navigation === ///
 
 .side-nav {
 	margin-top: 3.5rem;
@@ -178,11 +178,125 @@
 	}
 }
 
-// === Legal Text === ///
+/// === Legal Text === ///
 
 .legal {
 	padding: 2.5rem;
 	font-size: $font-size-sm;
 	text-align: $align-center;
 	color: $color-grey-light-4;
+}
+
+/// === Gallery === ///
+
+.gallery {
+	@include flex;
+
+	&__photo {
+		display: block;
+		width: $max-width;
+	}
+}
+
+/// === Hotel Overview === ///
+
+.overview {
+	@include flex;
+
+	align-items: $align-center;
+	justify-content: $justify-between;
+	border-bottom: 1px solid $color-grey-light-2;
+
+	&__heading {
+		padding: 1.5rem 3rem;
+		font-weight: $font-weight-light;
+		font-size: $font-size-lg;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+
+	&__stars {
+		@include flex;
+
+		margin-right: auto;
+	}
+
+	&__icon-star,
+	&__icon-location {
+		width: 1.75rem;
+		height: 1.75rem;
+		fill: $color-primary;
+	}
+
+	&__location {
+		@include flex;
+
+		align-items: $align-center;
+		font-size: $font-size-sm;
+	}
+
+	&__icon-location {
+		margin-right: 1.5rem;
+	}
+
+	&__rating {
+		@include centered(column);
+
+		align-self: $align-stretch;
+		margin-left: 3rem;
+		padding: 0 2.25rem;
+		color: $color-white;
+		background-color: $color-primary;
+	}
+
+	&__rating-average {
+		margin-bottom: -3px;
+		font-weight: $font-weight-light;
+		font-size: $font-size-lg;
+	}
+
+	&__rating-count {
+		font-size: $font-size-xs;
+		text-transform: uppercase;
+	}
+}
+
+// === Inline Button === ///
+
+.btn-inline {
+	display: inline-block;
+	border: none;
+	border-bottom: 1px solid currentColor;
+	padding-bottom: 2px;
+	font-size: inherit;
+	color: $color-primary;
+	background-color: transparent;
+	transition: $transition-basic;
+	cursor: pointer;
+
+	&:focus {
+		outline: none;
+		animation: pulsate 1s infinite;
+	}
+
+	&:hover {
+		color: $color-grey-dark-1;
+	}
+}
+
+@keyframes pulsate {
+	0% {
+		box-shadow: none;
+		transform: scale(1);
+	}
+
+	50% {
+		box-shadow: $shadow-light;
+		transform: scale(1.05);
+	}
+
+	100% {
+		box-shadow: none;
+		transform: scale(1);
+	}
 }
