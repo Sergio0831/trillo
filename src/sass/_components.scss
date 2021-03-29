@@ -182,7 +182,7 @@
 
 .legal {
 	padding: 2.5rem;
-	font-size: $font-size-sm;
+	font-size: $font-size-xs;
 	text-align: $align-center;
 	color: $color-grey-light-4;
 }
@@ -205,7 +205,7 @@
 
 	align-items: $align-center;
 	justify-content: $justify-between;
-	border-bottom: 1px solid $color-grey-light-2;
+	border-bottom: $line;
 
 	&__heading {
 		padding: 1.5rem 3rem;
@@ -232,7 +232,7 @@
 		@include flex;
 
 		align-items: $align-center;
-		font-size: $font-size-sm;
+		font-size: $font-size-xs;
 	}
 
 	&__icon-location {
@@ -291,12 +291,79 @@
 	}
 
 	50% {
-		box-shadow: $shadow-light;
+		box-shadow: $shadow-light-1;
 		transform: scale(1.05);
 	}
 
 	100% {
 		box-shadow: none;
 		transform: scale(1);
+	}
+}
+
+// === Paragraph === ///
+
+.paragraph:not(:last-of-type) {
+	margin: 2rem;
+}
+
+// === List === ///
+
+.list {
+	@include flex;
+
+	flex-wrap: $wrap;
+	margin: 3rem 0;
+	border-top: $line;
+	border-bottom: $line;
+	padding: 3rem;
+
+	&__item {
+		flex: 0 0 50%;
+		margin-bottom: 0.7rem;
+	}
+
+	&__item::before {
+		content: "";
+		display: inline-block;
+		mask-image: url("../img/chevron-thin-right.svg");
+		mask-size: cover;
+		margin-right: 0.7rem;
+		width: 1rem;
+		height: 1rem;
+		background-color: $color-primary;
+
+		// Older browsers
+		// background-image: url("../img/chevron-thin-right.svg");
+		// background-size: cover;
+	}
+}
+
+// === Recommend === ///
+
+.recommend {
+	@include flex;
+
+	align-items: $align-center;
+	justify-content: $justify-between;
+	font-size: $font-size-s;
+	color: $color-grey-dark-3;
+
+	&__count {
+	}
+
+	&__friends {
+	}
+
+	&__photo {
+		border: $thick;
+		border-radius: $rounded;
+		width: 4rem;
+		height: 4rem;
+		box-sizing: content-box;
+
+		&:not(:last-child) {
+			margin-right: -1.5rem;
+		}
 	}
 }

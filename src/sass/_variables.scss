@@ -38,8 +38,9 @@ $color-black: #000;
 
 // Font Size
 
-$font-size-xs: 0.8rem;
-$font-size-sm: 1.2rem;
+$font-size-xxs: 0.8rem;
+$font-size-xs: 1.2rem;
+$font-size-s: 1.3rem;
 $font-size-md: 1.4rem;
 $font-size-lg: 2.25rem;
 
@@ -71,10 +72,14 @@ $max-width: 100%;
 // Border
 
 $border-radius-base: 100px;
+$rounded: 50%;
+$thick: 3px solid $color-white;
+$line: 1px solid $color-grey-light-2;
 
 // Shadow
 
-$shadow-light: 0 1rem 4rem rgba($color-black, 0.25);
+$shadow-light-1: 0 1rem 4rem rgba($color-black, 0.25);
+$shadow-light-2: 0 1rem 5rem rgba($color-black, 0.06);
 $shadow-dark: 0 2rem 6rem rgba($color-black, 0.3);
 
 // --- ANIMATION --- //
@@ -83,9 +88,10 @@ $shadow-dark: 0 2rem 6rem rgba($color-black, 0.3);
 
 $transition-basic: all 0.3s ease;
 
-// --- FLEX POSITION --- //
+// --- FLEX --- //
 
 $align-center: center;
 $align-stretch: stretch;
 $justify-center: center;
 $justify-between: space-between;
+$wrap: wrap;
