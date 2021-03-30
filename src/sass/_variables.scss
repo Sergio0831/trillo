@@ -42,7 +42,7 @@ $font-size-xxs: 0.8rem;
 $font-size-xs: 1.2rem;
 $font-size-s: 1.3rem;
 $font-size-md: 1.4rem;
-$font-size-lg: 2.25rem;
+$font-size-lg: 2.2rem;
 
 // Font Family
 
@@ -57,6 +57,7 @@ $font-weight-semi-bold: 600;
 
 // Line Height
 
+$line-height-sm: 1;
 $line-height-base: 1.6;
 
 // Text Color
@@ -91,6 +92,7 @@ $transition-basic: all 0.3s ease;
 // --- FLEX --- //
 
 $align-center: center;
+$align-left: left;
 $align-stretch: stretch;
 $justify-center: center;
 $justify-between: space-between;

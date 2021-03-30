@@ -39,6 +39,7 @@
 
 	border-bottom: $line;
 	padding: 4.5rem;
+	font-size: $font-size-md;
 	background-color: $color-grey-light-1;
 }
 
@@ -53,6 +54,5 @@
 
 .user-reviews {
 	flex: 1;
-	padding: 3rem;
-	background-color: $color-white;
+	text-align: $align-center;
 }

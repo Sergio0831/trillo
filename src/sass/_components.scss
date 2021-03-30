@@ -274,6 +274,11 @@
 	transition: $transition-basic;
 	cursor: pointer;
 
+	& span {
+		margin-left: 3px;
+		transition: margin-left 0.2s;
+	}
+
 	&:focus {
 		outline: none;
 		animation: pulsate 1s infinite;
@@ -281,6 +286,10 @@
 
 	&:hover {
 		color: $color-grey-dark-1;
+
+		span {
+			margin-left: 0.8rem;
+		}
 	}
 }
 
@@ -349,12 +358,6 @@
 	font-size: $font-size-s;
 	color: $color-grey-dark-3;
 
-	&__count {
-	}
-
-	&__friends {
-	}
-
 	&__photo {
 		border: $thick;
 		border-radius: $rounded;
@@ -365,5 +368,70 @@
 		&:not(:last-child) {
 			margin-right: -1.5rem;
 		}
+	}
+}
+
+// === Review === ///
+
+.review {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 3.5rem;
+	padding: 3rem;
+	box-shadow: $shadow-light-2;
+	background-color: $color-white;
+
+	&::before {
+		content: "\201C";
+		position: absolute;
+		left: -1rem;
+		top: -2.75rem;
+		z-index: 1;
+		font-family: sans-serif;
+		font-size: 20rem;
+		line-height: $line-height-sm;
+		color: $color-grey-light-2;
+	}
+
+	&__text {
+		position: relative;
+		z-index: 10;
+		margin-bottom: 2rem;
+		text-align: $align-left;
+	}
+
+	&__user {
+		@include flex;
+
+		align-items: $align-center;
+	}
+
+	&__photo {
+		margin-right: 1.5rem;
+		border-radius: $rounded;
+		width: 4.5rem;
+		height: 4.5rem;
+	}
+
+	&__user-box {
+		margin-right: auto;
+	}
+
+	&__user-name {
+		margin-bottom: 0.4rem;
+		font-weight: $font-weight-semi-bold;
+		font-size: $font-size-xs;
+		text-transform: uppercase;
+	}
+
+	&__user-date {
+		font-size: $font-size-xs;
+		color: $color-grey-dark-3;
+	}
+
+	&__rating {
+		font-weight: $font-weight-light;
+		font-size: $font-size-lg;
+		color: $color-primary;
 	}
 }
