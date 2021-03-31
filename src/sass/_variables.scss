@@ -42,6 +42,7 @@ $font-size-xxs: 0.8rem;
 $font-size-xs: 1.2rem;
 $font-size-s: 1.3rem;
 $font-size-md: 1.4rem;
+$font-size-mdl: 1.8rem;
 $font-size-lg: 2.2rem;
 
 // Font Family
@@ -97,3 +98,11 @@ $align-stretch: stretch;
 $justify-center: center;
 $justify-between: space-between;
 $wrap: wrap;
+
+// --- MEDIA QUERIES --- //
+
+$breakpoint-largest: 75em; // 1200px
+$breakpoint-large: 68.75em; // 1100px
+$breakpoint-medium: 56.25em; // 900px
+$breakpoint-small: 37.5em; // 600px
+$breakpoint-smallest: 28.125em; // 450px
